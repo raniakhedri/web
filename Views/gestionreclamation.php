@@ -8,6 +8,9 @@
 	include '../Controller/reponseC.php';
 	$reponseC=new reponseC();
 	$listereponses=$reponseC->afficherreponses(); 
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -162,14 +165,14 @@
                                
                             </div>
                             <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                                <a href="reverso2/index.html" class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                                    <i class="fab fa-wpforms float-left mx-2"></i>
-                                    check reclamation window on  the web site
-                                    <span><i class="fa fa-angle-right float-right"></i></span>
-                                </a>
+                                <input id="search-input" type="text" placeholder="Search...">
+
+
+                                
                             </li>
+                            
                         </div>
-                        
+
                     </div>
 
 
@@ -193,20 +196,29 @@
 
                     <!--/Grid Form-->
                 </div>
-                <div style="display: flex; align-items: center;  margin-left: 20px;">
-                    <label for="Recherche">Search</label>
-                    <input class="border px-4 py-2" type="text" style="margin-right: 10px;">
-                    <button type="button" onclick="alert('Hello world!')">
-                            <button style=" width: 70px; 
-                            height: 30px;
-                            border-radius: 15px;
-                            background-color: rgb(233, 178, 59);
-                            color: black;"> Search 
-                            </button>
-                        </button>
 
-                    
-                </div>
+
+
+
+
+
+                <title>AJAX Search Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#search-input").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("table tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+<body>
+    <br><br>
+
+
 
 
 
@@ -312,7 +324,7 @@
                         </button>
 
                     
-                </div>
+                </div>      
 
 
 
