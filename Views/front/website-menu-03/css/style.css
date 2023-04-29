@@ -325,7 +325,7 @@ a {
         .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
           padding-left: 15px !important; }
 .notification {
-  background-color: #555;
+  background-color:#d4b488 !important;
   color: white;
   text-decoration: none;
   padding: 5px 61px;

@@ -74,7 +74,36 @@
   <!-- Vendor CSS Files -->
 
 </head>
+<style>
+  body{
+        background-image: url('hero-bg.png');
+  background-size: cover;
+  background-position: center;
+    }
+    .notification {
+  background-color:#bc9864 ;
+  color: white;
+  text-decoration: none;
+  padding: 5px 61px;
+  position: relative;
+  display: inline-block;
+  border-radius: 30px;
+}
 
+.notification:hover {
+  background: #d4b488;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+</style>
 <body>
 
   <div class="site-mobile-menu">
@@ -102,10 +131,10 @@
               <li><a href="about.html"><span>Achat</span></a></li>
               <li><a href="blog.html"><span>Blog</span></a></li>
               <li><a href="contact.html"><span>Reclamation</span></a></li>
-              <a href="#" class="notification">
+              <a href="notification.php" class="notification">
   <span>Notifications</span>
   <span class="badge">0</span>
-</a>
+     </a>
             </ul>
            
           </nav>
