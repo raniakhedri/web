@@ -9,8 +9,6 @@
 	$reponseC=new reponseC();
 	$listereponses=$reponseC->afficherreponses(); 
 
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -157,42 +155,23 @@
 					<a href="ajouterreponse.php?id=<?php echo $reclamation['id']; ?>">Repondre</a>
 				</td>
 
-			</tr>
-			<?php
+			 </tr>
+			  <?php
 				}
-			?>
+			  ?>
                                 </table>
                                
                             </div>
                             <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
                                 <input id="search-input" type="text" placeholder="Search...">
 
-
                                 
                             </li>
-                            
+
                         </div>
 
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-                   
 
                     <!--/Grid Form-->
                 </div>
@@ -219,7 +198,7 @@
     <br><br>
 
 
-
+                                              <!--table reponse -->
 
 
                 <div class="reponse"></div>
@@ -257,10 +236,11 @@
 				     foreach($listereponses as $reponse){
 			   ?>
 		    	<tr>
+                    <form method="post">
 				<td class="border w-1/6 px-4 py-2"> <?php echo $reponse['id']; ?></td>
 				<td class="border w-1/6 px-4 py-2"><?php echo $reponse['id_reclamation']; ?></td>
 				<td class="border w-1/6 px-4 py-2"><?php echo $reponse['texte']; ?></td>
-
+          
               
 				
 				<td>
@@ -290,59 +270,9 @@
                         
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-                   
-
                     <!--/Grid Form-->
                 </div>
-                <div style="display: flex; align-items: center;  margin-left: 20px;">
-                    <label for="Recherche">Search</label>
-                    <input class="border px-4 py-2" type="text" style="margin-right: 10px;">
-                    <button type="button" onclick="alert('Hello world!')">
-                            <button style=" width: 70px; 
-                            height: 30px;
-                            border-radius: 15px;
-                            background-color: rgb(233, 178, 59);
-                            color: black;"> Search 
-                            </button>
-                        </button>
-
-                    
-                </div>      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
             </main>

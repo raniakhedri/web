@@ -1,4 +1,29 @@
 <?php
+ini_set("SMTP", "localhost");
+ini_set("smtp_port", "465");
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // récupérer les champs du formulaire
+  $email = $_POST['email'];
+
+  // construction du message
+  $message = "Bonjour,
+
+  Merci de nous avoir fait part de votre réclamation, notre équipe vous répondra dans les plus brefs délais.";
+
+  // envoi du mail
+  $to = $email;
+  $subject = "Réclamation";
+  
+
+  if(mail($to, $subject, $message)) {
+    // afficher un message de confirmation
+    echo "<p>Your reservation details have been sent to your email address.</p>";
+  } else {
+    // afficher un message d'erreur
+    echo "<p>Sorry, something went wrong. Please try again later.</p>";
+  }
+}
     include_once '../Model/Adherent.php';
     include_once '../Controller/AdherentC.php';
 
@@ -172,7 +197,7 @@
                   <div id="form-message-success" class="mb-4 w-100 text-center">
                     Your message was sent, thank you!
                   </div>
-                  <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                  <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
