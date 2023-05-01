@@ -9,7 +9,29 @@
 
     $adherentC = new AdherentC();
     
-
+    $createArchiveTableQuery = "CREATE TABLE IF NOT EXISTS archive LIKE reclamation";
+    $moveToArchiveQuery = "INSERT INTO archive SELECT * FROM reclamation WHERE id = :id";
+    $deleteFromOriginalQuery = "DELETE FROM reclamation WHERE id = :id";
+    
+    // Check if the archive input was clicked
+    if (isset($_POST['archive'])) {
+        // Loop through all the rows in the original table
+        $selectAllQuery = "SELECT * FROM mytable";
+        $stmt = $pdo->query($selectAllQuery);
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            // If the "archive" checkbox is checked for this row, move it to the archive table
+            if (isset($_POST['archive'][$row['id']])) {
+                $moveStmt = $pdo->prepare($moveToArchiveQuery);
+                $moveStmt->execute(array(':id' => $row['id']));
+                $deleteStmt = $pdo->prepare($deleteFromOriginalQuery);
+                $deleteStmt->execute(array(':id' => $row['id']));
+            }
+        }
+        // Create the archive table if it doesn't exist yet
+        $createStmt = $pdo->prepare($createArchiveTableQuery);
+        $createStmt->execute();
+    }
+    
     if (isset($_POST['id'] ) && isset($_POST['nom']  )&& isset($_POST['description']  )&& isset($_POST['email']  )) 
     {
         echo $_POST['id'] ;
