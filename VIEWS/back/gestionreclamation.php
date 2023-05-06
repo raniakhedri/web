@@ -86,56 +86,68 @@ if (isset($_GET['unarchive'])) {
         <div class="flex flex-1">
             <!--Sidebar-->
             <aside id="sidebar"
-            class="bg-side-nav w-1/2 md:w-1/6 lg:w-1/6 border-r border-side-nav hidden md:block lg:block">
+                    class="bg-side-nav w-1/2 md:w-1/6 lg:w-1/6 border-r border-side-nav hidden md:block lg:block">
 
-            <ul class="list-reset flex flex-col">
-                <li class=" w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                    <a href="index.html"
-                        class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                        <i class="fas fa-tachometer-alt float-left mx-2"></i>
-                        Dashboard
-                        <span><i class="fas fa-angle-right float-right"></i></span>
-                    </a>
-                </li>
-            <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                <a href="tables.html" class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                    <i class="fas fa-table float-left mx-2"></i>
-                    user management
-                    <span><i class="fa fa-angle-right float-right"></i></span>
-                </a>
-            </li>
-            <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                <a href="mail.html" class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                    <i class="fab fa-wpforms float-left mx-2"></i>
-                    delivery management
-                    <span><i class="fa fa-angle-right float-right"></i></span>
-                </a>
-            </li>
-            <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                <a href="gestionsformateurs.html"
-                    class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                    <i class="fas fa-table float-left mx-2"></i>
-                    training management
-                    <span><i class="fa fa-angle-right float-right"></i></span>
-                </a></li>
-                <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                    <a href="gestionproduit.html"
-                        class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                        <i class="fas fa-table float-left mx-2"></i>
-                        product management
-                        <span><i class="fa fa-angle-right float-right"></i></span>
-                    </a></li>
-                    <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                        <a href="gestionreclamation.html"
-                            class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                            <i class="fas fa-table float-left mx-2"></i>
-                            reclamation management
-                            <span><i class="fa fa-angle-right float-right"></i></span>
-                        </a></li>
-           
-            </ul>
+                    <ul class="list-reset flex flex-col">
+                        <li class=" w-full h-full py-3 px-2 border-b border-light-border bg-white">
+                            <a href="index.html"
+                                class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                <i class="fas fa-tachometer-alt float-left mx-2"></i>
+                                Dashboard
+                                <span><i class="fas fa-angle-right float-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
+                            <a href="affruser.php"
+                                class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                <i class="fas fa-table float-left mx-2"></i>
+                                utilisateur
+                                <span><i class="fa fa-angle-right float-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
+                            <a href="gestionreclamation.php"
+                                class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                <i class="fab fa-wpforms float-left mx-2"></i>
+                                Réclamations
+                                <span><i class="fa fa-angle-right float-right"></i></span>
+                            </a>
+                        </li>
 
-        </aside>
+                        <li class="w-full h-full py-3 px-2">
+                            <a href="#"
+                                class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                <i class="far fa-file float-left mx-2"></i>
+                                Pages
+                                <span><i class="fa fa-angle-down float-right"></i></span>
+                            </a>
+                            <ul class="list-reset -mx-2 bg-white-medium-dark">
+                                <li class="border-t mt-2 border-light-border w-full h-full px-2 py-3">
+                                    <a href=""
+                                        class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                        Page d'enregistrement
+                                        <span><i class="fa fa-angle-right float-right"></i></span>
+                                    </a>
+                                </li>
+                                <li class="border-t border-light-border w-full h-full px-2 py-3">
+                                    <a href="register.html"
+                                        class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                        Page de connexion
+                                        <span><i class="fa fa-angle-right float-right"></i></span>
+                                    </a>
+                                </li>
+                                <li class="border-t border-light-border w-full h-full px-2 py-3">
+                                    <a href="404.html"
+                                        class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                        Page 404
+                                        <span><i class="fa fa-angle-right float-right"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </aside>
             <!--/Sidebar-->
             <!--Main-->
             <main class="bg-white-500 flex-1 p-3 overflow-hidden">

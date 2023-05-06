@@ -15,10 +15,10 @@ session_start();
     <meta name="keywords"
         content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
     <!-- Css -->
-    <link rel="icon"  href="./apple-touch-icon.png" />
+    <link rel="icon" href="./apple-touch-icon.png" />
     <link rel="stylesheet" href="./dist/styles.css">
     <link rel="stylesheet" href="./dist/all.css">
-    
+
     <title>Distunis Admin</title>
 </head>
 
@@ -40,8 +40,7 @@ session_start();
 
 
 
-                        <a href="#" onclick=""
-                            class="text-white p-2 no-underline hidden md:block lg:block"></a>
+                        <a href="#" onclick="" class="text-white p-2 no-underline hidden md:block lg:block"></a>
                         <div id="ProfileDropDown"
                             class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r">
                             <ul class="list-reset">
@@ -86,10 +85,10 @@ session_start();
                             </a>
                         </li>
                         <li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
-                            <a href="mail.html"
+                            <a href="gestionreclamation.php"
                                 class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
                                 <i class="fab fa-wpforms float-left mx-2"></i>
-                                Maill
+                                Réclamations
                                 <span><i class="fa fa-angle-right float-right"></i></span>
                             </a>
                         </li>
@@ -163,13 +162,13 @@ session_start();
                                 class="shadow bg-warning border-l-8 hover:bg-warning-dark border-warning-dark mb-2 p-2 md:w-1/4 mx-2">
                                 <div class="p-4 flex flex-col">
                                     <a href="#" class="no-underline text-white text-2xl">
-                                    <?php
-                                       
+                                        <?php
 
-                                       $userC = new userC(); 
-                                       $liste = $userC->countUsers();
-                                       echo $liste ;
-                                       ?> 
+
+                                        $userC = new userC();
+                                        $liste = $userC->countUsers();
+                                        echo $liste;
+                                        ?>
                                     </a>
                                     <a href="#" class="no-underline text-white text-lg">
                                         Nombre d'utilisateurs
