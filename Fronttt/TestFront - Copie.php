@@ -1,7 +1,7 @@
   <!DOCTYPE html>
   <html>
     <head>
-      <title>Events News Forum</title>
+      <title>Forum</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="frontc.css">
       <style>
@@ -15,48 +15,55 @@
       </style>
     </head>
     <body>
-      <div class="header">
-        <a href="C:/Users/ilyes/OneDrive/Bureau/project web/index.html">
-          <img src="logo.png" alt="Events News Forum">
-        </a>
-        <h1>Forum et nouveautées</h1>
-      </div>
-      <div class="events-container">
-        <!-- Ad spot in top right corner -->
-        <div class="ad-container">
-          <a href="https://www.example.com">
-            <img src="advertisement.jpg" alt="Advertisement" width="100%" height="100%">
-          </a>
-        </div>
-        <div class="news-container">
-          <div class="news-story">
-          
-            <h2>Festival International de Carthage</h2>
-          <a href="carthage-festival.html">
-            <img src="125.jpg" alt="Photo de performeurs au Festival International de Carthage" height="200" width="300">
-          </a>
-          <p>Détails : Le Festival International de Carthage est l'un des plus grands événements à venir en Tunisie, qui aura lieu cet été. Le festival est une célébration de la musique, du théâtre et de la danse, et attire des artistes et des spectateurs du monde entier. C'est une excellente occasion de découvrir la riche culture et l'histoire de la Tunisie.</p>
-        </div>
-        <p id="currentDateTime"></p>
-    
-        
-        <div class="news-story">
-          <h2>Visite Privée à Kairouan, El Jem & Monastir avec Déjeuner depuis Hammamet maintenant disponible</h2>
-          <a href="eljem-championship.html">
-            <img src="124.jpg" alt="Photo de joueurs de handball en action" height="200" width="300">
-          </a>
-          <p>Détails : Depuis votre Hôtel vers la ville de Kairouan la quatrième ville sainte de l’Islam et capitale spirituelle de la Tunisie. Vous visiterez la grande mosquée qui est le plus ancien édifice religieux de l'Occident musulman Par la suite vous aurez du temps libre dans la médina de Kairouan. Puis El Djem l'ancienne cité de Thysdrus, l'une des plus prospères de l'Afrique romaine pour la visite de son amphithéâtre et finir l’excursion par Monastir ancienne ville punique puis romaine de Ruspina.</p>
-        </div>
-        
-        <div class="news-story">
-          <h2>Excursion Privée à Testour, Dougga et Bulla Regia depuis Tunis .</h2>
-          <a href="economic-forum.html">
-            <img src="126.jpg" alt="Photo de dirigeants d'entreprise au Forum Économique de la Tunisie" height="200" width="300">
-          </a>  
-          <p>Détails : Pour les amateurs d’archéologie et de l’histoire antique de la Tunisie Avec nous vous pouvez découvrir deux sites archéologiques d’exception, Dougga et Bulla Regia. Le premier arrêt de notre excursion est la visite de Testour, ce village a été fondé par le peuple maure au début du XVIIe siècle. Nous ferons un tour panoramique de la ville, de la célèbre mosquée au beau minaret orné d'une horloge dont les aiguilles tournent dans le sens inverse d'une montre. Ensuite, nous continuerons vers Dougga, l'ancienne ville romaine de Thugga. Nous apprécierons la visite des belles ruines merveilleusement conservées si vous êtes passionné d'histoire et d'art : le théâtre, le capitole, le forum, les thermes, les maisons, la place de la rose des vents, l'arc de triomphe, le Libyco- Mausolée punique Puis vous visiterez Bulla Régia . Ce site archéologique est célèbre ses édifices religieux : le capitole, le temple d’Apollon, les deux basiliques chrétiennes, et l’église d’Alexander.</p>
-        </div>
       
-        </div>
+    <header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="logo-container">
+      <img src="./logo.png" class="logo">
+    </div>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Acceuil</a></li>
+        <li><a class="nav-link scrollto" href="#about">A propos de nous</a></li>
+        <li><a class="nav-link scrollto" href="#menu">Evenements</a></li>
+        <li><a class="nav-link scrollto" href="#events">Excursions</a></li>
+        <li><a class="nav-link scrollto" href="#gallery">Sport</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <li><a class="nav-link scrollto" href="Fronttt/TestFront - Copie.php">Forum</a></li>
+      </ul>
+    </nav>
+    <a href="C:\Users\user\Desktop\project web\login\Login_v1\index.html" class="book-a-table-btn scrollto d-none d-lg-flex">Se connecter</a>
+  </div>
+</header>
+
+<style>
+  /* Add this CSS */
+  .container-xl {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 150px;
+}
+
+#navbar {
+  margin-left: 10px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+ 
     
 
 
@@ -65,21 +72,121 @@
       
 
   <link rel="stylesheet" href="frontc.css">
-      
+  <style>
+    h1 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #6E5B00;
+    font-style: italic; 
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #444;
+}
 
-      <div class="my-form-wrapper">
-        <form action="http://localhost/ProjetWeb/crud/comm.php" method="POST">
-          <label for="nom">Nom</label>
-          <input type="text" name="nom" placeholder="John Doe" id="nom">
-          <label for="email">Email</label>
-          <input type="text" name="email" placeholder="johndoe@example.com" id="email">
-          <label for="type">Commentaire</label>
-          <input type="text" name="type" placeholder="Commentaire" id="type">
-          <input type="submit" value="Create">
-      </form>
-      </div>
+</style>
+
+  <h1>Derniers Evenements</h1>
+  <?php include 'abcc.php'; ?>
+
+  <style>
+  .dark-gold-btn {
+    display: flex;
+justify-content: center;
+    background-color: rgba(12, 11, 9, 0.6);
+  color: darkgoldenrod;
+  border: 1px solid darkgoldenrod;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-decoration: none;
+}
+  }
+
+  .dark-gold-btn:hover {
+    background-color: #a4782e;
+  }
+</style>
   
-      <section id="mySection">
+<section id="book-a-table">
+  <style>
+   form {
+    width: 50%; /* Updated grid width */
+    max-width: 400px;
+    margin: 100px auto;
+    margin-top: 50px; /* Added margin top and bottom */
+    text-align: center;
+    background-color: rgba(12, 11, 9, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+    color: darkgoldenrod;
+    font-size: 16px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: none;
+    background-color: #777;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    background-color: #DAA520;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #B8860B;
+}
+
+  </style>
+  <form action="http://localhost/ProjetWeb/crud/comm.php" method="POST">
+    <label for="name">Nom et Prenom:</label>
+    <input type="text" id="name" name="nom" placeholder="Entrez votre nom et prenom ici" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Entrez votre email ici" required>
+
+<label for="comment">Commentaire:</label>
+<textarea id="comment" name="type" placeholder="Entrez votre commentaire ici" required></textarea>
+
+<input type="submit" value="Envoyer">
+  </form>
+</section>
+<button id="toggle-form-btn" class="dark-gold-btn">Masquer</button>
       <?php
       $host = 'localhost';
       $dbname = 'phpcrud';
@@ -131,10 +238,12 @@ $pubs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 .comment h3 {
   margin-top: 0;
   margin-bottom: 5px;
+  color:grey;
 }
 
 .comment p {
   margin-bottom: 5px;
+  color:white;
 }
 
 .comment .date {
@@ -142,7 +251,107 @@ $pubs = $stmt->fetchAll(PDO::FETCH_ASSOC);
   font-size: 0.8em;
 }
 </style>
+<style>
+.container {
+  max-width: 800px;
+  background-color: rgba(12, 11, 9, 0.6);
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 
+.comment {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(51, 51, 51, 0.8);
+
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-details h3 {
+  margin: 0;
+  color:grey;
+  font-style:italic;
+  font-size: 1.2rem;
+}
+
+.comment-details p {
+  margin: 0;
+  font-size: 1rem;
+  color:white;
+  font-style:italic;
+}
+
+.comment .date {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.reply-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.reply-container {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  max-height: calc(100% - 20px);
+  padding: 10px;
+  margin: 0;
+  border: none;
+  box-shadow: transparent;
+  z-index: 999;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.expand-btn {
+  background-color: rgb(83, 66, 5);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  padding: 0.2rem;
+}
+
+.expand-btn i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: gray;
+}
+</style>
+<div class="container">
 <div class="post">
   <?php function getUserByNom($nom) {
   // Replace with your own database credentials
@@ -168,8 +377,25 @@ $pubs = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return null;
   }
 } ?>
- <div class="post">
-  <h2>Derniers commentaires</h2>
+ <style>
+    .form-control h2 {
+        margin-bottom: 50px;
+        font-style: italic;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #6E5B00;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #444;
+    }
+</style>
+
+<div class="form-control">
+    <h2>Derniers commentaires</h2>
+    <!-- Your comment section code here -->
+</div>
+
   <style>
     /* Add styles for the reply overlay */
     .reply-overlay {
@@ -241,19 +467,7 @@ $pubs = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <p class="date"><?= $pub['datep'] ?></p>
         
       </div>
-      <div class="reply-overlay"></div> <!-- Add the overlay -->
-      <div class="reply-container"> <!-- Add the reply container -->
-      <form action="http://localhost/ProjetWeb/crud/repp.php" method="POST">
-          <label for="nom">Nom</label>
-          <input type="text" name="nom" placeholder="John Doe" id="nom">
-          <label for="type">Reponse</label>
-          <input type="text" name="type" placeholder="Commentaire" id="contenu">
-          <input type="submit" value="Create">
-          <button class="expand-btn">
-  <i class="fa fa-expand"></i>
-</button>
-      </form>
-      </div>
+      
     </div>
     <?php
   // Handle form submission
@@ -314,4 +528,21 @@ $pubs = $stmt->fetchAll(PDO::FETCH_ASSOC);
   </p>
 </footer>
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleFormBtn = document.getElementById('toggle-form-btn');
+  const bookTableSection = document.getElementById('book-a-table');
+
+  toggleFormBtn.addEventListener('click', function() {
+    if (bookTableSection.style.display === 'none') {
+      bookTableSection.style.display = 'block';
+      toggleFormBtn.textContent = 'Masquer';
+    } else {
+      bookTableSection.style.display = 'none';
+      toggleFormBtn.textContent = 'Montrer';
+    }
+  });
+});
+</script>
+
 </html>
