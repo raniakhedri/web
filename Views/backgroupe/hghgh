@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Forum</title>
+</head>
+<body>
+	<h1>Welcome to My Forum</h1>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea><br><br>
+		<input type="submit" value="Post">
+	</form>
+	<hr>
+	<h2>Recent Posts:</h2>
+	<ul>
+		<li><strong>Username:</strong> JohnDoe</li>
+		<li><strong>Message:</strong> Hello, everyone!</li>
+		<li><strong>Date:</strong> April 2, 2023</li>
+	</ul>
+	<ul>
+		<li><strong>Username:</strong> JaneDoe</li>
+		<li><strong>Message:</strong> Welcome to the forum!</li>
+		<li><strong>Date:</strong> April 1, 2023</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events News Forum</title>
+    <link rel="stylesheet" href="frontc.css">
+   
+  
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <script src="dist/js/lightbox.min.js"></script>
+  </head>
+
+  <body>
+   <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+
+    <h1>Dernières Nouvelles et Événements à venir en Tunisie</h1>
+    <div class="events-container">
+      <div class="news-story">
+        <div class="events-container news-container">       
+        
+        <h2>Festival International de Carthage</h2>
+        <a href="carthage-festival.html">
+          <img src="125.jpg" alt="Photo de performeurs au Festival International de Carthage" height="200" width="300">
+        </a>
+        <p>Détails : Le Festival International de Carthage est l'un des plus grands événements à venir en Tunisie, qui aura lieu cet été. Le festival est une célébration de la musique, du théâtre et de la danse, et attire des artistes et des spectateurs du monde entier. C'est une excellente occasion de découvrir la riche culture et l'histoire de la Tunisie.</p>
+      </div>
+      <p id="currentDateTime"></p>
+   
+      
+      <div class="news-story">
+        <h2>Championnat National de Handball Tunisien</h2>
+        <a href="handball-championship.html">
+          <img src="124.jpg" alt="Photo de joueurs de handball en action" height="200" width="300">
+        </a>
+        <p>Détails : Le Championnat National de Handball Tunisien a récemment eu lieu en mars, mettant en vedette les meilleurs joueurs de handball du pays. La compétition était intense, avec les meilleures équipes se battant pour le titre de champion.</p>
+      </div>
+      
+      <div class="news-story">
+        <h2>Forum Économique de la Tunisie</h2>
+        <a href="economic-forum.html">
+          <img src="126.jpg" alt="Photo de dirigeants d'entreprise au Forum Économique de la Tunisie" height="200" width="300">
+        </a>
+        <p>Détails : Le Forum Économique de la Tunisie est un événement à venir qui réunira des dirigeants d'entreprise, des économistes et des décideurs politiques pour discuter de l'avenir de l'économie tunisienne. Le forum abordera un large éventail de sujets, notamment les opportunités d'investissement, les stratégies de croissance économique et plus encore.</p>
+      </div>
+    
+      </div>
+  
+
+
+
+      
+    
+
+<link rel="stylesheet" href="frontc.css">
+    <script src="jsjs.js"></script>
+    
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <form style="width: 250px;">
+        <h2 style="font-size: 20px;"></h2>
+        <label for="name" style="font-size: 14px;">Name:</label>
+        <input type="text" id="name" name="name" style="font-size: 14px;">
+    
+        <label for="email" style="font-size: 14px;">Email:</label>
+        <input type="email" id="email" name="email" style="font-size: 14px;">
+    
+        <label for="message" style="font-size: 14px;">Commentaire:</label>
+        <textarea id="message" name="message" style="font-size: 14px; height: 80px;"></textarea>
+    
+        <input type="submit" value="Submit" style="font-size: 14px;">
+      </form>
+    </div>
+  
+  
+  
+    <button onclick="toggleSection()" style="background-color: #909551; color: #000000; border: none; padding: 10px 20px; border-radius: 5px; font-size: 1rem; cursor: pointer;">Montrer les publications</button>
+
+   
+    <section id="mySection">
+ 
+
+
+
+      <h2>Publications</h2>
+<div id="comments"> 
+  <div class="comment">
+    <img class="profile-pic" src="33.jpg" alt="Profile Picture">
+    <div class="comment-details">
+      <h3>John Doe</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non est sed lacus lacinia porttitor. Praesent vel purus a ipsum interdum aliquam. Nullam molestie nibh ac turpis suscipit, eu fringilla augue convallis. Suspendisse potenti. Nam pulvinar tortor vel lacinia iaculis.</p>
+      <span class="date">Posted on January 1, 2023</span>
+    </div>
+    <div class="comment-response">
+      <form>
+        <label for="response">Répondre:</label><br>
+        <textarea id="response" name="response" rows="3" cols="50"></textarea><br>
+        <input type="submit" value="Envoyer">
+      </form>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="profile-pic" src="34.jpg" alt="Profile Picture">
+    <div class="comment-details">
+      <h3>Jane Smith</h3>
+      <p>Nullam feugiat sem ac nisl feugiat, a pharetra arcu volutpat. Nulla facilisi. Duis finibus enim augue, id tempus dolor rhoncus at. Suspendisse tincidunt semper efficitur. Donec vehicula orci vel massa commodo, eget eleifend augue pellentesque.</p>
+      <span class="date">Posted on January 2, 2023</span>
+    </div>
+    <div class="comment-response">
+      <form>
+        <label for="response">Répondre:</label><br>
+        <textarea id="response" name="response" rows="3" cols="50"></textarea><br>
+        <input type="submit" value="Envoyer">
+      </form>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="profile-pic" src="35.jpg" alt="Profile Picture">
+    <div class="comment-details">
+      <h3>Bob Johnson</h3>
+      <p>Praesent quis libero sit amet enim dignissim bibendum eu ac odio. Nulla pretium accumsan sem, vitae iaculis magna ullamcorper non. Etiam maximus vestibulum enim, sit amet dictum magna molestie ac. Nam eget enim euismod, consectetur erat nec, dictum augue. Vivamus ac metus purus.</p>
+      <span class="date">Posted on January 3, 2023</span>
+    </div>
+    <div class="comment-response">
+      <form>
+        <label for="response">Répondre:</label><br>
+        <textarea id="response" name="response" rows="3" cols="50"></textarea><br>
+        <input type="submit" value="Envoyer">
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.comment-details {
+  flex: 1;
+}
+
+.comment h3 {
+  margin-top: 0;
+}
+
+.comment p {
+  margin-bottom: 5px;
+}
+
+.comment .date {
+  font-style: italic;
+  font-size: 0.8em;
+}
+</style>
+
+</section>

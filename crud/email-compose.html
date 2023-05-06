@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Travl : Hotel Admin Dashboard Bootstrap 5 Template" />
+	<meta property="og:title" content="Travl : Hotel Admin Dashboard Bootstrap 5 Template" />
+	<meta property="og:description" content="Travl : Hotel Admin Dashboard Bootstrap 5 Template" />
+	<meta property="og:image" content="social-image.png" />
+	<meta name="format-detection" content="telephone=no">
+
+
+	<!-- FAVICONS ICON -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	<link href="vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords"
+		content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
+	<!-- Css -->
+	<link rel="stylesheet" href="./dist/styles.css">
+	<link rel="stylesheet" href="./dist/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
+	<title>Dashboard | Tailwind Admin</title>
+
+</head>
+
+<body>
+	<!--Container -->
+	<div class="mx-auto bg-grey-400">
+		<!--Screen-->
+		<div class="min-h-screen flex flex-col">
+			<!--Header Section Starts Here-->
+			<header class="bg-nav">
+				<div class="flex justify-between">
+					<div class="p-1 mx-3 inline-flex items-center">
+						<i class="fas fa-bars pr-2 text-white" onclick="sidebarToggle()"></i>
+						<h1 class="text-white p-2">Logo</h1>
+					</div>
+					<div class="p-1 flex flex-row items-center">
+						<a href="https://github.com/tailwindadmin/admin"
+							class="text-white p-2 mr-2 no-underline hidden md:block lg:block"></a>
+
+
+
+						<a href="#" onclick="profileToggle()"
+							class="text-white p-2 no-underline hidden md:block lg:block"></a>
+						<div id="ProfileDropDown"
+							class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r">
+							<ul class="list-reset">
+								<li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">My
+										account</a></li>
+								<li><a href="#"
+										class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Notifications</a>
+								</li>
+								<li>
+									<hr class="border-t mx-2 border-grey-ligght">
+								</li>
+								<li><a href="#"
+										class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!--/Header-->
+
+			<div class="flex flex-1">
+				<!--Sidebar-->
+				<aside id="sidebar"
+					class="bg-side-nav w-1/2 md:w-1/6 lg:w-1/6 border-r border-side-nav hidden md:block lg:block">
+
+					<ul class="list-reset flex flex-col">
+						<li class=" w-full h-full py-3 px-2 border-b border-light-border bg-white">
+							<a href="index.html"
+								class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+								<i class="fas fa-tachometer-alt float-left mx-2"></i>
+								Dashboard
+								<span><i class="fas fa-angle-right float-right"></i></span>
+							</a>
+						</li>
+						<li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
+							<a href="tables.html"
+								class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+								<i class="fas fa-table float-left mx-2"></i>
+								Tables
+								<span><i class="fa fa-angle-right float-right"></i></span>
+							</a>
+						</li>
+						<li class="w-full h-full py-3 px-2 border-b border-light-border bg-white">
+							<a href="mail.html"
+								class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+								<i class="fab fa-wpforms float-left mx-2"></i>
+								Maill
+								<span><i class="fa fa-angle-right float-right"></i></span>
+							</a>
+						</li>
+
+						<li class="w-full h-full py-3 px-2">
+							<a href="#"
+								class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+								<i class="far fa-file float-left mx-2"></i>
+								Pages
+								<span><i class="fa fa-angle-down float-right"></i></span>
+							</a>
+							<ul class="list-reset -mx-2 bg-white-medium-dark">
+								<li class="border-t mt-2 border-light-border w-full h-full px-2 py-3">
+									<a href="login.html"
+										class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+										Page d'enregistrement
+										<span><i class="fa fa-angle-right float-right"></i></span>
+									</a>
+								</li>
+								<li class="border-t border-light-border w-full h-full px-2 py-3">
+									<a href="register.html"
+										class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+										Page de connexion
+										<span><i class="fa fa-angle-right float-right"></i></span>
+									</a>
+								</li>
+								<li class="border-t border-light-border w-full h-full px-2 py-3">
+									<a href="404.html"
+										class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+										Page 404
+										<span><i class="fa fa-angle-right float-right"></i></span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</aside>
+				<!--/Sidebar-->
+				<main class="bg-white-500 flex-1 p-3 overflow-hidden">
+
+
+					
+					
+					
+						<div class="row page-titles">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item active"><a href="javascript:void(0)">Email</a></li>
+								<li class="breadcrumb-item"><a href="javascript:void(0)">Inbox</a></li>
+							</ol>
+						</div>
+						<!-- row -->
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="email-left-box px-0 mb-3">
+											<div class="p-0">
+												<a href="email-compose.html" class="btn btn-primary btn-block">Compose</a>
+											</div>
+											<div class="mail-list rounded mt-4">
+												<a href="mail.html" class="list-group-item active"><i
+														class="fa fa-inbox font-18 align-middle me-2"></i> Inbox <span
+														class="badge badge-primary badge-sm float-end">198</span> </a>
+												<a href="javascript:void()" class="list-group-item"><i
+														class="fa fa-paper-plane font-18 align-middle me-2"></i>Sent</a> <a
+													href="javascript:void()" class="list-group-item"><i class="fas fa-star me-2"></i>Important
+													<span class="badge badge-danger text-white badge-sm float-end">47</span>
+												</a>
+												<a href="javascript:void()" class="list-group-item"><i
+														class="mdi mdi-file-document-box font-18 align-middle me-2"></i>Draft</a><a
+													href="javascript:void()" class="list-group-item"><i
+														class="fa fa-trash font-18 align-middle me-2"></i>Trash</a>
+											</div>
+											<div class="mail-list rounded overflow-hidden mt-4">
+												<div class="intro-title d-flex justify-content-between my-0">
+													<h5>Categories</h5>
+													<i class="fa fa-chevron-down"></i>
+												</div>
+												<a href="mail.html" class="list-group-item"><span class="icon-warning"><i
+															class="fa fa-circle"></i></span>
+													Work </a>
+												<a href="mail.html" class="list-group-item"><span class="icon-primary"><i
+															class="fa fa-circle"></i></span>
+													Private </a>
+												<a href="mail.html" class="list-group-item"><span class="icon-success"><i
+															class="fa fa-circle"></i></span>
+													Support </a>
+												<a href="mail.html" class="list-group-item"><span class="icon-dpink"><i
+															class="fa fa-circle"></i></span>
+													Social </a>
+											</div>
+										</div>
+										<div class="email-right-box ms-0 ms-sm-4 ms-sm-0">
+											<div class="toolbar mb-4" role="toolbar">
+												<div class="btn-group mb-1">
+													<button type="button" class="btn btn-primary light px-3"><i
+															class="fa fa-archive"></i></button>
+													<button type="button" class="btn btn-primary light px-3"><i
+															class="fa fa-exclamation-circle"></i></button>
+													<button type="button" class="btn btn-primary light px-3"><i
+															class="fa fa-trash"></i></button>
+												</div>
+												<div class="btn-group mb-1">
+													<button type="button" class="btn btn-primary light dropdown-toggle px-3"
+														data-bs-toggle="dropdown">
+														<i class="fa fa-folder"></i> <b class="caret m-l-5"></b>
+													</button>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript: void(0);">Social</a>
+														<a class="dropdown-item" href="javascript: void(0);">Promotions</a>
+														<a class="dropdown-item" href="javascript: void(0);">Updates</a>
+														<a class="dropdown-item" href="javascript: void(0);">Forums</a>
+													</div>
+												</div>
+												<div class="btn-group mb-1">
+													<button type="button" class="btn btn-primary light dropdown-toggle px-3"
+														data-bs-toggle="dropdown">
+														<i class="fa fa-tag"></i> <b class="caret m-l-5"></b>
+													</button>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript: void(0);">Updates</a>
+														<a class="dropdown-item" href="javascript: void(0);">Social</a>
+														<a class="dropdown-item" href="javascript: void(0);">Promotions</a>
+														<a class="dropdown-item" href="javascript: void(0);">Forums</a>
+													</div>
+												</div>
+												<div class="btn-group mb-1">
+													<button type="button" class="btn btn-primary light dropdown-toggle v"
+														data-bs-toggle="dropdown">More <span class="caret m-l-5"></span>
+													</button>
+													<div class="dropdown-menu"> <a class="dropdown-item" href="javascript: void(0);">Mark as
+															Unread</a> <a class="dropdown-item" href="javascript: void(0);">Add to Tasks</a>
+														<a class="dropdown-item" href="javascript: void(0);">Add Star</a> <a
+															class="dropdown-item" href="javascript: void(0);">Mute</a>
+													</div>
+												</div>
+											</div>
+											<div class="compose-content">
+												<form action="#">
+													<div class="mb-3">
+														<input type="text" class="form-control bg-transparent" placeholder=" To:">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control bg-transparent" placeholder=" Subject:">
+													</div>
+													<div class="mb-3">
+														<textarea id="email-compose-editor" class="textarea_editor form-control bg-transparent"
+															rows="15" placeholder="Enter text ..."></textarea>
+													</div>
+												</form>
+												<h5 class="mb-4"><i class="fa fa-paperclip"></i> Attatchment</h5>
+												<form action="#" class="dropzone">
+													<div class="fallback">
+														<input name="file" type="file" multiple />
+													</div>
+												</form>
+											</div>
+											<div class="text-start mt-4 mb-3">
+												<button class="btn btn-primary btn-sl-sm me-2" type="button"><span class="me-2"><i
+															class="fa fa-paper-plane"></i></span>Send</button>
+												<button class="btn btn-danger light btn-sl-sm" type="button"><span class="me-2"><i
+															class="fa fa-times"></i></span>Discard</button>
+											</div>
+										</div>
+									</div>
+					</main>
+					
+					
+					<!--/Main-->
+					</div>
+		<!--Footer-->
+		<footer class="bg-grey-darkest text-white p-2">
+			<div class="flex flex-1 mx-auto">&copy; DisTunis</div>
+			<div class="flex flex-1 mx-auto">Par: <a href="https://themewagon.com/" target=" _blank"> Elli howa</a>
+			</div>
+		</footer>
+		<!--/footer-->
+
+	
+
+	</div></div>
+	<script src="./main.js"></script>
+</body>
+<script src="vendor/global/global.min.js"></script>
+<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="js/custom.min.js"></script>
+<script src="js/dlabnav-init.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/styleSwitcher.js"></script>
+
+</html>
